@@ -1,0 +1,44 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.CfsSubsetEval -P 1 -E 1
+Search:       weka.attributeSelection.BestFirst -D 1 -N 5
+Relation:     features_good
+Instances:    60
+Attributes:   11
+              general_red_level
+               vas_mean_redlvl
+               vas_mean_hue
+               vas_mean_sat
+               vas_mean_val
+               bulb_mean_redlvl
+               bulb_mean_hue
+               bulb_mean_sat
+               bulb_mean_val
+               vascular_area
+               expert_lvl
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 56
+	Merit of best subset found:    0.854
+
+Attribute Subset Evaluator (supervised, Class (numeric): 11  expert_lvl):
+	CFS Subset Evaluator
+	Including locally predictive attributes
+
+Selected attributes: 1,3,4,7,8,10 : 6
+                     general_red_level
+                      vas_mean_hue
+                      vas_mean_sat
+                      bulb_mean_hue
+                      bulb_mean_sat
+                      vascular_area
+
